@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left-Side Dropdown</title>
+    <style>
+        /* Button Styling */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-btn {
+            background-color: #6c757d; /* Button background color */
+            color: white; /* Button text color */
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .dropdown-btn i {
+            margin-right: 8px; /* Margin between icon and text */
+        }
+
+        /* Dropdown Menu Styling */
+        .dropdown-content {
+            display: none; /* Hidden by default */
+            position: absolute;
+            left: 0; /* Align to the left */
+            background-color: #f1f1f1; /* Background color of the dropdown */
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black; /* Text color */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd; /* Hover effect */
+        }
+
+        /* Show dropdown on button click */
+        .show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint, rem quia unde neque vero facilis nesciunt? Quas unde assumenda ipsum vero sint dolor aspernatur, iure corrupti adipisci eligendi cum dolorem, repellendus fugiat nihil excepturi suscipit animi saepe fugit impedit quia ratione. Praesentium sapiente culpa asperiores!
+    </p>
+
+<div class="dropdown">
+    <button class="dropdown-btn" onclick="toggleDropdown()">
+        <i class="fa-solid fa-globe"></i> Language
+    </button>
+    <div id="dropdown-menu" class="dropdown-content">
+        <a href="#">en</a>
+        <a href="#">hi</a>
+    </div>
+</div>
+
+<!-- Add Font Awesome for icon -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+<script>
+    // Function to toggle dropdown visibility
+    function toggleDropdown() {
+        document.getElementById("dropdown-menu").classList.toggle("show");
+    }
+
+    // Close the dropdown if clicked outside
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropdown-btn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

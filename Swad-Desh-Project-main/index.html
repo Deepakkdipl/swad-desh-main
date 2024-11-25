@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Website | Home </title>
+
+    <!-- Css
+     ========================================== -->
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="stylesheet" href="Css/new.css">
+    <link rel="shortcut icon" href="Img/logo (2).png" type="image/x-icon">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Font: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- Navbar Section
+     ==================================== -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="logo">
+            <img src="Img/logo (2).png" alt="">
+        </div>
+        <div class="container fw-bold">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="daily-menu.html">Daily Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="food.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Food Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="non-veg.html">Non Veg Curry Dishes</a>
+                            </li>
+                            <li><a class="dropdown-item" href="veg.html">Veg Curry Dishes</a></li>
+                            <!-- <li><a class="dropdown-item" href="indian-grills.html">Indian Grills
+                                    (Tandoor)</a></li> -->
+                            <li><a class="dropdown-item" href="indian-street.html">Indian street
+                                    appetizers</a></li>
+                            <li><a class="dropdown-item" href="biryani.html">Biryani's</a></li>
+                            <li><a class="dropdown-item" href="predjedla.html">Predjedla Appetizers</a>
+                            </li>
+                            <li><a class="dropdown-item" href="polievky.html">Polievky-Soup</a></li>
+                            <!-- <li><a class="dropdown-item" href="swad.html">Swad Desh Final Menu</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="book.html">Book Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact
+                            Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex social-icon">
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <i class="fa-solid fa-globe"></i> Language
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-content">
+                        <i id="google_translate_element"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner Section
+     ====================================== -->
+    <div data-aos="zoom-out-up">
+        <div class="home">
+            <div class="main_slide">
+                <div>
+                    <h1 class="fw-bold">Enjoy <span>Delicious Food</span> in Your Healthy Life.</h1>
+                    <p>"At swad-desh, we believe that enjoying delicious food is an essential part of a healthy
+                        lifestyle. Our carefully crafted menu is designed to offer flavorful, nutritious meals made with
+                        fresh, high-quality ingredients. Whether you're savoring a hearty breakfast, a wholesome lunch,
+                        or a delightful dinner, we ensure that every dish contributes to your well-being. Indulge
+                        guilt-free, knowing that our meals are prepared with your health in mind, allowing you to enjoy
+                        both taste and wellness in every bite."</p>
+                    <a href="contact.html"><button class="red_btn">Visit Now<i
+                                class="fa-solid fa-arrow-right-long"></i></button></a>
+                </div>
+                <div>
+                    <img src="Img/Daal .png" height="600px" alt="">
+                </div>
+            </div>
+
+            <div class="food-item">
+                <div class="item">
+                    <div>
+                        <img src="Img/paneer.png" alt="">
+                    </div>
+                    <!-- <h3>Paneer Dishes  (Indian Cottage Cheese)</h3> -->
+                    <h3>Paneer Dishes</h3>
+                    <p>Indulge in the authentic flavors of India with our delightful range of paneer dishes at
+                        Swad-Desh. Each dish is crafted with fresh, soft paneer and infused with a blend of rich spices,
+                        creating a symphony of taste and texture that will tantalize your taste buds. From the creamy
+                        and mildly spiced Paneer Butter Masala to the fiery and aromatic Kadhai Paneer</p>
+                    <a href="veg.html"><button class="white_btn">See Menu</button></a>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="Img/—Pngtree—chicken dish inasal na manok_16672051.png" alt="">
+                    </div>
+                    <h3>Chicken Dishes</h3>
+                    <p>At Swad-Desh, our chicken dishes bring the true essence of Indian flavors to your table. Each
+                        recipe is prepared with tender, juicy chicken and a perfect blend of traditional spices,
+                        ensuring an explosion of taste in every bite. Whether you're craving the rich and creamy flavors
+                        of Butter Chicken, the bold and smoky aroma of Tandoori Chicken, or the fiery kick of Chicken
+                        Curry.
+                    </p>
+                    <a href="non veg.html"> <button class="red_btn">See Menu</button></a>
+                </div>
+                <div class="item">
+                    <div>
+                        <img src="Img/Veggies Curry Dishes.png" alt="">
+                    </div>
+                    <h3>Tandoori Dishes</h3>
+                    <p>Experience the smoky, aromatic flavors of India's iconic tandoori dishes at Swad-Desh. Our
+                        tandoori specialties are marinated to perfection in a blend of yogurt and traditional spices,
+                        then slow-cooked in a clay tandoor oven to achieve that signature char and smoky flavor. From
+                        the ever-popular Tandoori Chicken, bursting with a perfect balance of heat and tang.</p>
+                    <a href="predjedla.html"><button class="white_btn">See Menu</button></a>
+                </div>
+            </div>
+            <!-- Why Choose Us
+            ====================================== -->
+            <div class="main_slide2 d-flex justify-content-evenly">
+                <div class="fooding">
+                    <img src="Img/paneer.png" width="400px" height="500px" alt="">
+                </div>
+                <div class="question">
+                    <div>
+                        <h2 class="fw-bolder">Why People Choose us?</h2>
+                    </div>
+                    <div>
+                        <div class="q-ans">
+                            <div>
+                                <img src="Img/Daal .png" alt="">
+                            </div>
+                            <div>
+                                <h4>Authentic Recipes</h4>
+                                <p> We pride ourselves on using traditional Indian cooking methods, ensuring every dish
+                                    is rich in flavor and steeped in heritage.</p>
+                            </div>
+                        </div>
+                        <div class="q-ans">
+                            <div>
+                                <img src="Img/Veggies Curry Dishes.png" alt="">
+                            </div>
+                            <div>
+                                <h4>Fresh Ingredients:</h4>
+                                <p>We handpick the freshest ingredients, from farm-fresh vegetables to premium-quality
+                                    spices, to create dishes that burst with natural goodness.</p>
+                            </div>
+                        </div>
+                        <div class="q-ans">
+                            <div>
+                                <img src="Img/Daal .png" alt="">
+                            </div>
+                            <div>
+                                <h4>Exceptional Variety: </h4>
+                                <p>From creamy curries to smoky tandoori dishes, our diverse menu caters to every taste,
+                                    offering vegetarian, non-vegetarian, and vegan options.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- We offer Section
+             ==================================================== -->
+            <section class="offer-section">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card offer-card">
+                                <img src="Img/Reservation_icon-removebg-preview.png" height="50px"
+                                    alt="Reservations Icon">
+                                <h5>Reservations</h5>
+                                <p>With our online reservation system, you can reserve a table quickly and easily
+                                    without unnecessary worries.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card offer-card">
+                                <img src="Img/private_icon-removebg-preview.png" height="50px" alt="Private Event Icon">
+                                <h5>Private Event</h5>
+                                <p>Call us and we will take care of everything else. We will create unforgettable
+                                    moments for you.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card offer-card">
+                                <img src="Img/Online_icon-removebg-preview.png" height="50px" alt="Online Order Icon">
+                                <h5>Online Order</h5>
+                                <p>At Masala Darbar, you can easily and quickly order your food online. The food you
+                                    love, just a click away.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <div class="card offer-card">
+                                <img src="Img/Fast_Delivery_icon-removebg-preview.png" height="50px"
+                                    alt="Fast Delivery Icon">
+                                <h5>Fast Delivery</h5>
+                                <p>Order and enjoy fast delivery for instant satiety. Food on your table even before you
+                                    feel hungry.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Get 20% Discount -->
+            <section class="discount-section">
+                <div class="container">
+                    <div class="content">
+                        <h1>Join And Get <span>20% Down</span></h1>
+                        <p>We present to you an offer that you should definitely not miss. Just one click below, and you
+                            can get a 20% discount on your next order. Click today and let yourself be carried away by
+                            the flavors we have prepared for you!</p>
+                        <a href="#" class="cta-button">Get your coupon!</a>
+                    </div>
+                    <div class="images">
+                        <img src="Img/—Pngtree—chicken dish inasal na manok_16672051.png" alt="Food Offer"
+                            class="main-image">
+                        <img src="Img/logo (2).png" alt="Food" class="badge-image">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Our Popular food item
+             =================================================== -->
+            <div class="main_slide3">
+                <div class="fav-head">
+                    <h3 class="fw-bold">Our Popular Food item</h3>
+                    <p>At Swad-Desh, we bring the authentic flavors of India to your plate. Our menu is a culinary
+                        journey through the rich and diverse tastes of regional Indian cuisine. Each dish is crafted
+                        with passion, using traditional recipes and the freshest ingredients to ensure every bite is a
+                        celebration of flavor. Whether you're craving something spicy, tangy, or savory, our popular
+                        dishes promise to satisfy your taste buds and leave you wanting more.</p>
+                </div>
+                <div class="fav-food">
+                    <div class="item">
+                        <div>
+                            <img src="Img/Swad-desh final img/non-veg/Butter chicken.webp" alt="">
+                        </div>
+                        <h3>Butter Chicken</h3>
+                        <p> The chicken is first grilled to perfection, giving it a smoky undertone, before being gently
+                            simmered in the luscious sauce. This iconic dish pairs beautifully with naan, roti, or
+                            basmati rice, making it a must-try for anyone seeking the ultimate comfort food.</p>
+                        <p class="fav-price">$2.92</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="Img/Swad-desh final img/non-veg/Chicken Saag.webp" alt="">
+                        </div>
+                        <h3>Chicken Saag</h3>
+                        <p>Chicken Saag is a wholesome and flavorful dish that blends tender pieces of chicken with a
+                            vibrant, nutrient-packed spinach (saag) sauce. The chicken is marinated and cooked in a
+                            fragrant blend of spices, then simmered in a rich, green spinach gravy</p>
+                        <p class="fav-price">$2.92</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="Img/Swad-desh final img/non-veg/Chicken Do Pyaza.webp" alt="">
+                        </div>
+                        <h3>Chicken Do Pyaza</h3>
+                        <p>Chicken Do Pyaza is a flavorful North Indian dish known for its double dose of onions, which
+                            are added at two stages of cooking to create a unique, rich flavor. The succulent chicken is
+                            slow-cooked with onions, tomatoes, and a blend of aromatic spices, </p>
+                        <p class="fav-price">$2.92</p>
+                    </div>
+                    <div class="item">
+                        <div>
+                            <img src="Img/Swad-desh final img/non-veg/Chicken Kali mirch.webp" alt="">
+                        </div>
+                        <h3>Chicken Kali mirch</h3>
+                        <p>Chicken Do Pyaza is a flavorful North Indian dish known for its double dose of onions, which
+                            are added at two stages of cooking to create a unique, rich flavor. The succulent chicken is
+                            slow-cooked with onions, tomatoes, and a blend of aromatic spices, </p>
+                        <p class="fav-price">$2.92</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="dsgn"></div>
+    </div>
+
+    <div class="main_slide4 container">
+        <div class="chef-feed">
+            <h2 class="fw-bold fst-italic">Customer <span style="color: red;">Feedback</span></h2>
+            <p>"Swad-Desh offers the most authentic Indian cuisine I've had in years! Every dish bursts with rich
+                flavors, and the Butter Chicken was just perfect. The warm, welcoming atmosphere makes it a place I
+                always look forward to visiting. Highly recommended!"
+                "I am a huge fan of Indian food, and Swad-Desh has never disappointed. The Biryani and Chicken Saag were
+                so delicious and fresh. The staff was friendly and attentive, making the experience even better. It's my
+                go-to place for a satisfying meal!"
+            </p>
+            <div class="chef-detail">
+                <div>
+                    <img src="Img/logo (2).png" alt="">
+                </div>
+                <div>
+                    <h6>Developer Dude</h6>
+                    <p>Web Developer</p>
+                </div>
+            </div>
+            <div class="chef-vic">
+                <div>
+                    <i class="fa-solid fa-hand-peace"></i>
+                    <h4>68</h4>
+                    <p>"I tried Swad-Desh for the first time and was blown away.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-trophy"></i>
+                    <h4>956</h4>
+                    <p>"If you’re looking for real Indian flavors.</p>
+                </div>
+            </div>
+        </div>
+        <div class="chef">
+            <img src="Img/Restaurant_Uniform-removebg-preview.png" alt="">
+        </div>
+    </div>
+
+    <div class="letter container">
+        <div class="letter-hea">
+            <h2>Subscribe <span>Newsletter</span></h2>
+        </div>
+        <div class="letter-input">
+            <div>
+                <input type="email" placeholder="Example.com">
+            </div>
+            <button class="red_btn">Subscrible</button>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="text-center text-lg-start text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a> -->
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="footer-1">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Swad-Desh
+                        </h6>
+                        <p>
+                            Welcome to Food Website, where culinary excellence meets warm hospitality. Nestled in the
+                            heart of, we pride ourselves on offering a unique dining experience that blends
+                            traditional flavors with modern culinary techniques.
+
+
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="veg.html" class="text-reset">Food Menu</a>
+                        </p>
+                        <p>
+                            <a href="book.html" class="text-reset">Book a Table</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-reset">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="non-veg.html" class="text-reset">Non Veg</a>
+                        </p>
+                        <p>
+                            <a href="indian-street.html" class="text-reset">India Street</a>
+                        </p>
+                        <p>
+                            <a href="predjedla.html" class="text-reset">Predjedla Appetizers</a>
+                        </p>
+                        <p>
+                            <a href="biryani.html" class="text-reset">Biryani Item</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="https://www.kanakdrishtiinfo.com/" target="_blank"> Design and Developed
+                by: Kanak Drishti Infotech Private Limited</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- Footer -->
+
+    <!-- Script
+     ====================================== -->
+    <script src="Js/bootstrap.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="Js/index.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+
+    <!-- Add Font Awesome for icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Function to toggle dropdown visibility
+        function toggleDropdown() {
+            document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+
+        // Close the dropdown if clicked outside
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("google_translate_element");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

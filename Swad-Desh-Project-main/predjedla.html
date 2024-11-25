@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predjedla Appetizers - Food</title>
+
+    <!-- Css
+     =========================================-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="Css/style.css">
+    <link rel="shortcut icon" href="Img/logo (2).png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="logo">
+            <img src="Img/logo (2).png" alt="">
+        </div>
+        <div class="container fw-bold">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="daily-menu.html">Daily Menu</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="food.html" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Food Menu
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="non-veg.html">Non Veg Curry Dishes</a>
+                            </li>
+                            <li><a class="dropdown-item" href="veg.html">Veg Curry Dishes</a></li>
+                            <!-- <li><a class="dropdown-item" href="indian-grills.html">Indian Grills
+                                    (Tandoor)</a></li> -->
+                            <li><a class="dropdown-item" href="indian-street.html">Indian street
+                                    appetizers</a></li>
+                            <li><a class="dropdown-item" href="biryani.html">Biryani's</a></li>
+                            <li><a class="dropdown-item" href="predjedla.html">Predjedla Appetizers</a>
+                            </li>
+                            <li><a class="dropdown-item" href="polievky.html">Polievky-Soup</a></li>
+                            <!-- <li><a class="dropdown-item" href="swad.html">Swad Desh Final Menu</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="book.html">Book Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="contact.html">Contact
+                            Us</a>
+                    </li>
+                </ul>
+                <div class="d-flex social-icon">
+                    <a href=""><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href=""><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-square-whatsapp"></i></a>
+                </div>
+                <div class="dropdown">
+                    <button class="dropdown-btn" onclick="toggleDropdown()">
+                        <i class="fa-solid fa-globe"></i> Language
+                    </button>
+                    <div id="dropdown-menu" class="dropdown-content">
+                        <i id="google_translate_element"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Cards Section
+     =========================================== -->
+    <section class="food-menu-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Vegetarian ITEMS </h2>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Mix Vegetable Pakora.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Mix Vegetable Pakora </h5>
+                            <p class="card-text">Seasonal vegetables dipped in a spiced chickpea flour batter and
+                                deep-fried.</p>
+                            <p class="price text-danger"> 6.10 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Paneer Pakora.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Paneer Pakora </h5>
+                            <p class="card-text">Paneer (Indian cottage cheese) coated in a spiced chickpea flour batter
+                                then deep-fried. </p>
+                            <p class="price text-danger"> 5.90 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Bread pakora.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Bread pakora</h5>
+                            <p class="card-text">Slices of bread with a spiced potato filling, Dipped in a seasoned
+                                chickpea flour batter and Deep fried.</p>
+                            <p class="price text-danger"> 5.90 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Onion Bhaji.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Onion Bhaji</h5>
+                            <p class="card-text">Thinly sliced onions mixed with a spiced chickpea flour batter, and
+                                deep-fried.</p>
+                            <p class="price text-danger"> 5.90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Potato Bhaji.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Potato Bhaji </h5>
+                            <p class="card-text">Potato fritters, made with seasoned mashed potatoes and a blend of
+                                spices, then deep-fried.
+                            </p>
+                            <p class="price text-danger"> 5.90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Samosa (2 pieces).webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Samosa (2 pieces)</h5>
+                            <p class="card-text">Classic Indian snack - crispy pastry filled with a spiced mixture of
+                                potatoes, peas, and aromatic herbs</p>
+                            <p class="price text-danger"> 5.90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Batata vada.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Batata vada </h5>
+                            <p class="card-text">Spicy, mashed potato balls coated in a chickpea flour batter and
+                                deep-fried until golden and crispy</p>
+                            <p class="price text-danger"> 5.90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Cauliflower Manchurian.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cauliflower Manchurian </h5>
+                            <p class="card-text">Crisp-fried cauliflower florets tossed in a tangy, spicy sauce made
+                                with soy sauce, garlic, ginger, and chili</p>
+                            <p class="price text-danger"> 5.90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Palak Aloo Pakora.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Palak Aloo Pakora </h5>
+                            <p class="card-text">Fresh spinach and spiced potatoes fritters dipped in a seasoned
+                                chickpea flour batter and deep-fried.</p>
+                            <p class="price text-danger"> 6.10 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Steam Vegetable Momos.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Steam Vegetable Momos </h5>
+                            <p class="card-text">Steamed dumplings filled with a mixture of finely chopped vegetables
+                                and aromatic spices served with</p>
+                            <p class="price text-danger">5.90 €
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Fried Vegetable Momos.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fried Vegetable Momos</h5>
+                            <p class="card-text">Crispy dumplings filled with a vegetables and spices and Deep-fried vegetables and spices 
+                            </p>
+                            <p class="price text-danger"> 5.90 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Veg item/Honey Chilli Potato.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Honey Chilli Potato </h5>
+                            <p class="card-text">Crispy, golden-brown potato wedges tossed in a sweet and spicy
+                                honey-chili sauce.</p>
+                            <p class="price text-danger"> 5.90 € </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section-2
+     =========================================== -->
+    <section class="food-menu-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Non Vegetarian Items </h2>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Chicken Pakora.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Chicken Pakora </h5>
+                            <p class="card-text">Chunks of chicken, marinated and coated in a spiced chickpea flour
+                                batter and deep-fried</p>
+                            <p class="price text-danger"> 6.90 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Chicken Palak Pakora.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chicken Palak Pakora </h5>
+                            <p class="card-text">chicken mixed with fresh spinach and aromatic spices, dipped in a
+                                chickpea flour batter and deep fried.
+                            </p>
+                            <p class="price text-danger"> 7.40 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Chicken 65.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chicken 65 </h5>
+                            <p class="card-text">Crispy, spiced chicken chunks sautéed in a blend of chili, garlic, and
+                                ginger chunks sautéed in a blend of chili
+                            </p>
+                            <p class="price text-danger">7.40 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Honey Chilli Chicken.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Honey Chilli Chicken </h5>
+                            <p class="card-text">Crispy chicken pieces tossed in a sweet and spicy honey-chili sauce
+                                with a garlic</p>
+                            <p class="price text-danger"> 7.40 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Chicken Manchurian.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Chicken Manchurian </h5>
+                            <p class="card-text">Chicken pieces cooked in a tangy, spicy sauce with soy sauce, garlic,
+                                ginger, and with fresh herbs.</p>
+                            <p class="price text-danger"> 7.40 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Chicken Samosa.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chicken Samosa</h5>
+                            <p class="card-text">fish coated in a seasoned chickpea flour batter and deep-fried chickpea flour batter</p>
+                            <p class="price text-danger"> 6.90 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Fish Pakora.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Fish Pakora </h5>
+                            <p class="card-text">Spicy, mashed potato balls coated in a chickpea flour batter and
+                                deep-fried until golden and crispy</p>
+                            <p class="price text-danger"> 8.90 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Amtritsari Fish.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Amtritsari Fish </h5>
+                            <p class="card-text">Fish fillets marinated in a blend of spices and gram flour and
+                                Deep-fried  blend of spices and gram flour and</p>
+                            <p class="price text-danger"> 9.90 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Prawns Pakora.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Prawns Pakora </h5>
+                            <p class="card-text">Juicy prawns coated in a spiced chickpea flour batter and deep-fried
+                            </p>
+                            <p class="price text-danger"> 8.90 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non-veg item/Honey Chilli Garlic Prawns.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Honey Chilli Garlic</h5>
+                            <p class="card-text">Prawns tossed in a sweet and spicy honey-chili sauce with a garlic</p>
+                            <p class="price text-danger"> 8.90 € </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section-3
+     =========================================== -->
+    <section class="food-menu-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Vegetarian Indian Tandoori Dishes </h2>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Paneer Tikka.webp" class="card-img-top" alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Paneer Tikka </h5>
+                            <p class="card-text">Marinated paneer in yogurt, spices and herbs is skewered and grilled in
+                                a tandoor</p>
+                            <p class="price text-danger">7.40 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Malai Paneer Tikka.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Malai Paneer Tikka</h5>
+                            <p class="card-text">Paneer cubes are Marinated in a luxurious mixture of cream, yogurt, and
+                                mild spices grilled in a tandoor
+                            </p>
+                            <p class="price text-danger">7.90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Haryali Paneer Tikka.webp" class="card-img-top" alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Haryali Paneer Tikka </h5>
+                            <p class="card-text">Paneer cubes are Marinated in spinach, mint, and coriander with spices,
+                                grilled in a tandoor.
+                            </p>
+                            <p class="price text-danger">7.90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Lahsuni Paneer Tikka.webp" class="card-img-top" alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Lahsuni Paneer Tikka </h5>
+                            <p class="card-text">Smoky and garlicky Paneer cubes are marinated in yogurt, garlic paste,
+                                and spices grilled in a tandoor.
+                            </p>
+                            <p class="price text-danger">7.90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Hara bhara kebab.webp" class="card-img-top" alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Hara bhara kebab </h5>
+                            <p class="card-text">Grilled Green patties made from spinach, peas, potatoes, and a blend of
+                                aromatic spices.</p>
+                            <p class="price text-danger"> 7.40 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Veg Shammi kebab.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Veg Shammi kebab</h5>
+                            <p class="card-text">Grilled Vegetable kebab patty made with a mix of lentils, mashed
+                                vegetables, and aromatic spices</p>
+                            <p class="price text-danger"> 7.40€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Tandoori Mushroom Tikka.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tandoori Mushroom</h5>
+                            <p class="card-text">Mushrooms marinated in a tangy yogurt-based mixture with spices grilled
+                                in a tandoor.</p>
+                            <p class="price text-danger">7.90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Tandoori Aloo.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tandoori Aloo</h5>
+                            <p class="card-text">Baby potatoes marinated in a spicy yogurt mixture and roasted in a
+                                tandoor.</p>
+                            <p class="price text-danger"> 7.40 € </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Vegetarian Indian Tandoori Dishes/Tandoori Cauliflower.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tandoori Cauliflower</h5>
+                            <p class="card-text">Cauliflower florets marinated in a spicy yogurt-based marinade with
+                                spices and roasted in a tandoor.
+                            </p>
+                            <p class="price text-danger"> 7.40€ </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Section-4
+     =========================================== -->
+    <section class="food-menu-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Non Vegetarian Indian Tandoor Dishes </h2>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Tandoori Chicken.webp" class="card-img-top" alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tandoori Chicken </h5>
+                            <p class="card-text">Bone-in chicken marinated in a vibrant blend of yogurt, lemon juice,
+                                spices and grilled in a tandoor.</p>
+                            <p class="price text-danger">8.90€
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Afghani Chicken.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Afghani Chicken</h5>
+                            <p class="card-text">Bone-in chicken pieces are marinated in a rich blend of yogurt, cream,
+                                mild spices and grilled in a tandoor.
+                            </p>
+                            <p class="price text-danger">8.90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Tandoori Wings.webp" class="card-img-top" alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tandoori Wings </h5>
+                            <p class="card-text">Spicy, smoky wings marinated in a yogurt and spice mixture, roasted in
+                                tandoor.
+                            </p>
+                            <p class="price text-danger">8.90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Chicken Tikka.webp" class="card-img-top" alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chicken Tikka </h5>
+                            <p class="card-text">Marinated in a mixture of yogurt and spices like cumin, coriander, and
+                                paprika, grilled in a tandoor.
+                            </p>
+                            <p class="price text-danger">8.90€
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Haryali Chicken Tikka.webp" class="card-img-top" alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"> Haryali Chicken Tikka
+                            </h5>
+                            <p class="card-text">Marinated in a mixture of spinach, mint, coriander, and spices, grilled
+                                in a tandoor.</p>
+                            <p class="price text-danger"> 8.90 €</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Malai Chicken Tikka.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Malai Chicken Tikka 
+                            </h5>
+                            <p class="card-text">Marinated in a rich mixture of cream, yogurt, and mild spices, grilled in a tandoor.</p>
+                            <p class="price text-danger"> 8.90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Achari Chicken Tikka.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Achari Chicken Tikka</h5>
+                            <p class="card-text">Marinated in a mixture of yogurt and pickling spices, grilled in a tandoor.</p>
+                            <p class="price text-danger">8.90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Chicken Seekh Kabab.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Chicken Seekh Kabab</h5>
+                            <p class="card-text">Juicy dish, made from minced chicken mixed with aromatic spices, herbs, and finely chopped onions,
+                                grilled in tandoor.</p>
+                            <p class="price text-danger">9.40€ </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Tandoori Fish Tikka.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tandoori Fish Tikka</h5>
+                            <p class="card-text">Fish fillets marinated in a yogurt and spices, grilled in a tandoor.
+                            </p>
+                            <p class="price text-danger"> 10.90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Achari Fish Tikka.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Achari Fish Tikka</h5>
+                            <p class="card-text">Fish fillets are marinated in a mixture of yogurt and pickling spices, grilled in a tandoor.
+                            </p>
+                            <p class="price text-danger"> 10.90€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Haryali Fish tikka.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Haryali Fish tikka</h5>
+                            <p class="card-text">Fish fillets are marinated in a mixture of yogurt and pickling spices, grilled in a tandoor.
+                            </p>
+                            <!-- <p class="price text-dark"> 250g</p> -->
+                            <p class="price text-danger"> 11.40€</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-4 d-flex">
+                    <div class="card ">
+                        <img src="Img/Swad-desh final img/Pradjedla Appetizers/Non Vegetarian Indian Tandoor Dishes/Tandoori Prawns Tikka.webp" class="card-img-top"
+                            alt="Food name">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Tandoori Prawns Tikka</h5>
+                            <p class="card-text">Prawns marinated in a spicy yogurt mixture with chili powder, turmeric, and garam masala, grilled
+                                in tandoor.                                
+                            </p>
+                            <p class="price text-danger"> 10.40€</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <footer class="text-center text-lg-start text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+            <!-- Left -->
+            <div class="me-5 d-none d-lg-block">
+                <span>Get connected with us on social networks:</span>
+            </div>
+            <!-- Left -->
+
+            <!-- Right -->
+            <div>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-google"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="" class="me-4 text-reset">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <!-- <a href="" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a> -->
+            </div>
+            <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+
+        <!-- Section: Links  -->
+        <section class="footer-1">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            <i class="fas fa-gem me-3"></i>Swad-Desh
+                        </h6>
+                        <p>
+                            Welcome to Food Website, where culinary excellence meets warm hospitality. Nestled in the
+                            heart of, we pride ourselves on offering a unique dining experience that blends
+                            traditional flavors with modern culinary techniques.
+
+
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Products
+                        </h6>
+                        <p>
+                            <a href="index.html" class="text-reset">Home</a>
+                        </p>
+                        <p>
+                            <a href="about.html" class="text-reset">About Us</a>
+                        </p>
+                        <p>
+                            <a href="veg.html" class="text-reset">Food Menu</a>
+                        </p>
+                        <p>
+                            <a href="book.html" class="text-reset">Book a Table</a>
+                        </p>
+                        <p>
+                            <a href="contact.html" class="text-reset">Contact Us</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Useful links
+                        </h6>
+                        <p>
+                            <a href="non-veg.html" class="text-reset">Non Veg</a>
+                        </p>
+                        <p>
+                            <a href="indian-street.html" class="text-reset">India Street</a>
+                        </p>
+                        <p>
+                            <a href="predjedla.html" class="text-reset">Predjedla Appetizers</a>
+                        </p>
+                        <p>
+                            <a href="biryani.html" class="text-reset">Biryani Item</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            info@example.com
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+            </div>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 2024 Copyright:
+            <a class="text-reset fw-bold" href="https://www.kanakdrishtiinfo.com/" target="_blank"> Design and Developed
+                by: Kanak Drishti Infotech Private Limited</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+    <script src="Js/bootstrap.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="Js/index.js"></script>
+    <script type="text/javascript">
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement(
+                { pageLanguage: 'en' },
+                'google_translate_element'
+            );
+        }
+    </script>
+
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?
+cb=googleTranslateElementInit">
+</script>
+
+    <!-- Add Font Awesome for icon -->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+    <script>
+        // Function to toggle dropdown visibility
+        function toggleDropdown() {
+            document.getElementById("dropdown-menu").classList.toggle("show");
+        }
+
+        // Close the dropdown if clicked outside
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropdown-btn')) {
+                var dropdowns = document.getElementsByClassName("google_translate_element");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
